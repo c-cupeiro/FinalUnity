@@ -1,42 +1,36 @@
 fileFormatVersion: 2
-guid: 654a4250b553be54f9111c378a56daea
-timeCreated: 1500110301
+guid: 7a5da82363a1afe45a68294491253b00
+timeCreated: 1500111379
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Archer_0
-    21300002: Archer_1
-    21300004: Archer_2
-    21300006: Archer_3
-    21300008: Archer_4
-    21300010: Archer_5
-    21300012: Archer_6
-    21300014: Archer_7
-    21300016: Archer_8
-    21300018: Archer_9
-    21300020: Archer_10
-    21300022: Archer_11
-    21300024: Archer_12
-    21300026: Archer_13
-    21300028: Archer_14
-    21300030: Archer_15
-    21300032: Archer_16
-    21300034: Archer_17
-    21300036: Archer_18
-    21300038: Archer_19
-    21300040: Archer_20
-    21300042: Archer_21
-    21300044: Archer_22
-    21300046: Archer_23
-    21300048: Archer_24
-    21300050: Archer_25
-    21300052: Archer_26
-    21300054: Archer_27
-    21300056: Archer_28
-    21300058: Archer_29
-    21300060: Archer_30
-    21300062: Archer_31
-    21300064: Archer_32
+    21300000: Gentleman_0
+    21300002: Gentleman_1
+    21300004: Gentleman_2
+    21300006: Gentleman_3
+    21300008: Gentleman_4
+    21300010: Gentleman_5
+    21300012: Gentleman_6
+    21300014: Gentleman_7
+    21300016: Gentleman_8
+    21300018: Gentleman_9
+    21300020: Gentleman_10
+    21300022: Gentleman_11
+    21300024: Gentleman_12
+    21300026: Gentleman_13
+    21300028: Gentleman_14
+    21300030: Gentleman_15
+    21300032: Gentleman_16
+    21300034: Gentleman_17
+    21300036: Gentleman_18
+    21300038: Gentleman_19
+    21300040: Gentleman_20
+    21300042: Gentleman_21
+    21300044: Gentleman_22
+    21300046: Gentleman_23
+    21300048: Gentleman_24
+    21300050: Gentleman_25
+    21300052: Gentleman_26
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -73,7 +67,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 14
+  spritePixelsToUnits: 18
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -119,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Archer_0
+      name: Gentleman_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 12
         y: 155
-        width: 13
+        width: 10
         height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -132,11 +126,24 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_1
+      name: Gentleman_1
       rect:
         serializedVersion: 2
-        x: 50
+        x: 53
         y: 155
+        width: 11
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Gentleman_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 156
         width: 14
         height: 15
       alignment: 7
@@ -145,25 +152,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_2
+      name: Gentleman_3
       rect:
         serializedVersion: 2
-        x: 91
-        y: 156
-        width: 15
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_3
-      rect:
-        serializedVersion: 2
-        x: 129
+        x: 132
         y: 155
-        width: 16
+        width: 11
         height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -171,20 +165,20 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_4
+      name: Gentleman_4
       rect:
         serializedVersion: 2
-        x: 172
+        x: 173
         y: 156
-        width: 17
-        height: 16
+        width: 16
+        height: 14
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_5
+      name: Gentleman_5
       rect:
         serializedVersion: 2
         x: 214
@@ -197,12 +191,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_6
+      name: Gentleman_6
       rect:
         serializedVersion: 2
-        x: 10
+        x: 12
         y: 125
-        width: 13
+        width: 10
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -210,12 +204,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_7
+      name: Gentleman_7
       rect:
         serializedVersion: 2
-        x: 50
+        x: 53
         y: 126
-        width: 15
+        width: 12
         height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -223,11 +217,24 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_8
+      name: Gentleman_8
       rect:
         serializedVersion: 2
-        x: 91
+        x: 94
         y: 126
+        width: 11
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Gentleman_9
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 125
         width: 14
         height: 15
       alignment: 7
@@ -236,233 +243,25 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_9
+      name: Gentleman_10
       rect:
         serializedVersion: 2
-        x: 131
-        y: 124
-        width: 19
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_10
-      rect:
-        serializedVersion: 2
-        x: 172
+        x: 173
         y: 128
-        width: 17
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_11
-      rect:
-        serializedVersion: 2
-        x: 214
-        y: 127
-        width: 14
-        height: 14
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_12
-      rect:
-        serializedVersion: 2
-        x: 251
-        y: 135
-        width: 12
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_13
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 95
-        width: 13
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_14
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 95
-        width: 14
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_15
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 95
-        width: 14
-        height: 14
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_16
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 93
-        width: 17
-        height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_17
-      rect:
-        serializedVersion: 2
-        x: 172
-        y: 100
-        width: 17
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_18
-      rect:
-        serializedVersion: 2
-        x: 214
-        y: 95
-        width: 15
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_19
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 100
-        width: 15
-        height: 14
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_20
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 100
-        width: 7
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_21
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 65
-        width: 13
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_22
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 65
-        width: 14
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_23
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 66
         width: 16
-        height: 15
+        height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_24
+      name: Gentleman_11
       rect:
         serializedVersion: 2
-        x: 131
-        y: 65
-        width: 21
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_25
-      rect:
-        serializedVersion: 2
-        x: 172
-        y: 68
-        width: 17
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_26
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 65
-        width: 12
+        x: 215
+        y: 127
+        width: 13
         height: 14
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -470,25 +269,90 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_27
+      name: Gentleman_12
       rect:
         serializedVersion: 2
-        x: 257
-        y: 72
-        width: 13
-        height: 8
+        x: 12
+        y: 95
+        width: 10
+        height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_28
+      name: Gentleman_13
       rect:
         serializedVersion: 2
-        x: 50
-        y: 36
+        x: 54
+        y: 95
+        width: 9
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Gentleman_14
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 95
+        width: 10
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Gentleman_15
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 95
+        width: 14
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Gentleman_16
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 100
         width: 15
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Gentleman_17
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 95
+        width: 16
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Gentleman_18
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 65
+        width: 10
         height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -496,12 +360,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_29
+      name: Gentleman_19
       rect:
         serializedVersion: 2
-        x: 172
-        y: 38
-        width: 17
+        x: 53
+        y: 65
+        width: 11
         height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -509,25 +373,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_30
+      name: Gentleman_20
       rect:
         serializedVersion: 2
-        x: 257
-        y: 48
-        width: 12
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Archer_31
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 5
-        width: 15
+        x: 93
+        y: 66
+        width: 14
         height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -535,13 +386,78 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Archer_32
+      name: Gentleman_21
       rect:
         serializedVersion: 2
-        x: 172
-        y: 10
-        width: 17
+        x: 173
+        y: 68
+        width: 16
         height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Gentleman_22
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 65
+        width: 11
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Gentleman_23
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 36
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Gentleman_24
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 38
+        width: 16
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Gentleman_25
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 5
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Gentleman_26
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 10
+        width: 15
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
