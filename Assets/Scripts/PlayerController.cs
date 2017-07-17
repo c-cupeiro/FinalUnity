@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
 	public float speed = 2f;
 	public float maxSpeed = 5f;
 	public bool grounded;
 	public float jumpingPower = 6.5f;
+	public float respawnDelay = 2f;
 
 
 	private Rigidbody2D rgb2d;
@@ -17,7 +19,8 @@ public class PlayerController : MonoBehaviour {
 	private bool doubleJump;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		rgb2d = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		sprite = GetComponent<SpriteRenderer> ();
@@ -25,13 +28,14 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		anim.SetFloat ("Speed",Mathf.Abs (rgb2d.velocity.x));
-		anim.SetBool ("Ground",grounded);
+	void Update ()
+	{
+		anim.SetFloat ("Speed", Mathf.Abs (rgb2d.velocity.x));
+		anim.SetBool ("Ground", grounded);
 		if (grounded) {
 			doubleJump = true;
 		}
-		if(Input.GetKeyDown (KeyCode.UpArrow)){
+		if (Input.GetKeyDown (KeyCode.UpArrow)) {
 			if (grounded) {
 				jump = true;
 				doubleJump = true;
@@ -44,7 +48,8 @@ public class PlayerController : MonoBehaviour {
 
 
 	//Ya no es necesario multiplicar por el Time.deltaTime
-	void FixedUpdate(){
+	void FixedUpdate ()
+	{
 
 		Vector3 fixedVelocity = rgb2d.velocity;
 		fixedVelocity.x *= 0.75f;
@@ -63,12 +68,12 @@ public class PlayerController : MonoBehaviour {
 		if (dir_horizontal > 0.1f) {
 			//Derecha
 			//sprite.flipX = false;
-			transform.localScale = new Vector3(1f,1f,1f);
+			transform.localScale = new Vector3 (1f, 1f, 1f);
 		}
 		if (dir_horizontal < -0.1f) {
 			//Izquierda
 			//sprite.flipX = true;
-			transform.localScale = new Vector3(-1f,1f,1f);
+			transform.localScale = new Vector3 (-1f, 1f, 1f);
 		}
 
 		if (jump) {
@@ -81,7 +86,32 @@ public class PlayerController : MonoBehaviour {
 
 	//Esto es por si nos caemos mientras probamos pero sirve para quitar vida
 	// en un futuro
-	void OnBecameInvisible(){
+	void OnBecameInvisible ()
+	{
+		EnemyHitDead ();
+	}
+
+	public void EnemyJump ()
+	{
+		jump = true;
+	
+	}
+
+	public void EnemyHitDead ()
+	{
+		anim.Play ("Gentleman_dead");
+		gameObject.tag = "Untagged";
+
+		Invoke ("Respawn", respawnDelay);
+	}
+
+	void Respawn ()
+	{
+		gameObject.tag = "Player";
+		anim.Play ("Gentleman_idle");
 		transform.position = Vector3.zero;
 	}
+
+
+
 }
