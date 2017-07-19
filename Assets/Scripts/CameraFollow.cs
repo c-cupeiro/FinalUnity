@@ -7,7 +7,7 @@ public class CameraFollow : MonoBehaviour
 
 	public GameObject follow;
 	public Vector2 minCamPos, maxCamPos;
-	public float smoothTime = 1f;
+	public float smoothTime = 0.6f;
 
 	private Vector2 velocity;
 
