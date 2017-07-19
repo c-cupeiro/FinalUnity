@@ -18,6 +18,7 @@ public class Enemy_2_Trigger : MonoBehaviour {
 			//Debug.Log ("Player.y --> " + col.transform.position.y);
 			if (!((parent.transform.position.y+offset) < col.transform.position.y)) {
 				Destroy (parent);
+				parent.SendMessage ("StartSmoke");
 			}else {
 				col.SendMessage ("EnemyHitDead");
 			}

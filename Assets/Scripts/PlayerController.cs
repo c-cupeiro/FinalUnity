@@ -14,17 +14,25 @@ public class PlayerController : MonoBehaviour
 
 	private Rigidbody2D rgb2d;
 	private Animator anim;
-	private SpriteRenderer sprite;
+	private CircleCollider2D headCollider,groundCollider;
+	//private SpriteRenderer sprite;
 	private bool jump;
 	private bool doubleJump;
+	private Vector3 pos_ini;
+	private CoinManager cm;
+
 
 	// Use this for initialization
 	void Start ()
 	{
 		rgb2d = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
-		sprite = GetComponent<SpriteRenderer> ();
+		headCollider = GetComponent<CircleCollider2D> ();
+		groundCollider = transform.GetChild (0).GetComponent<CircleCollider2D> ();
+		//sprite = GetComponent<SpriteRenderer> ();
 		jump = false;
+		pos_ini = new Vector3 (transform.position.x, transform.position.y, transform.position.z);
+		cm = GameObject.FindGameObjectWithTag ("GameMaster").GetComponent<CoinManager> ();
 	}
 	
 	// Update is called once per frame
@@ -86,9 +94,13 @@ public class PlayerController : MonoBehaviour
 
 	//Esto es por si nos caemos mientras probamos pero sirve para quitar vida
 	// en un futuro
-	void OnBecameInvisible ()
+	/*void OnBecameInvisible ()
 	{
 		EnemyHitDead ();
+	}*/
+
+	public void AddCoinPoints(){
+		cm.points++;
 	}
 
 	public void EnemyJump ()
@@ -100,16 +112,20 @@ public class PlayerController : MonoBehaviour
 	public void EnemyHitDead ()
 	{
 		anim.Play ("Gentleman_dead");
+		headCollider.enabled = false;
+		groundCollider.enabled = false;
+		EnemyJump ();
 		gameObject.tag = "Untagged";
-
 		Invoke ("Respawn", respawnDelay);
 	}
 
 	void Respawn ()
 	{
+		headCollider.enabled = true;
+		groundCollider.enabled = true;
 		gameObject.tag = "Player";
 		anim.Play ("Gentleman_idle");
-		transform.position = Vector3.zero;
+		transform.position = pos_ini;
 	}
 
 

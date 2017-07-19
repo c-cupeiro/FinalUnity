@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
 
 	public float speed = 1f;
 	public float maxSpeed = 1f;
+	public GameObject smoke;
 
 	private Rigidbody2D rgb2d;
 	private Animator anim;
@@ -43,6 +44,11 @@ public class EnemyController : MonoBehaviour
 		//Debug.Log ("Enemy X:"+rgb2d.velocity.x);
 		//Debug.Log ("Enemy limitedSpeed:"+limitedSpeed);
 
+	}
+
+	public void StartSmoke(){
+		GameObject smoke_object =  Instantiate(smoke, transform.position, Quaternion.LookRotation(Vector3.up));	
+		Destroy (smoke_object,5);
 	}
 
 
